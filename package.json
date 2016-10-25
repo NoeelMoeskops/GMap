@@ -1,0 +1,34 @@
+{
+  "name": "gmap",
+  "version": "1.0.0",
+  "description": "google maps api js class, with custom markers and legenda's",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-if": "^2.0.1",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-typescript": "^3.0.2",
+    "gulp-uglify": "^2.0.0",
+    "typescript": "^2.0.3"
+  },
+  "scripts": {
+    "test": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Noedel-Man@github.com/Noedel-Man/GMap.git"
+  },
+  "keywords": [
+    "google",
+    "map",
+    "maps",
+    "api"
+  ],
+  "author": "Noeël Moeskops",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Noedel-Man/GMap/issues"
+  },
+  "homepage": "https://github.com/Noedel-Man/GMap#readme"
+}

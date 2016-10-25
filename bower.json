@@ -1,0 +1,27 @@
+{
+  "name": "GMap",
+  "homepage": "https://github.com/Noedel-Man/GMap",
+  "authors": [
+    "Noeël Moeskops"
+  ],
+  "description": "google maps api js class, with custom markers and legenda's",
+  "main": "./dist/Gmap.es5.min.js",
+  "keywords": [
+    "google",
+    "map",
+    "maps",
+    "api"
+  ],
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+    "node_modules",
+    "bower_components",
+  ],
+  "dependencies": {
+    "js-marker-clusterer": "*"
+  },
+  "devDependencies": {
+    "DefinitelyTyped": "*"
+  }
+}
