@@ -93,7 +93,7 @@ class GMap {
   public makeMarker({lat, lng}: { lat: number, lng: number }, title: string, content: string, categorie: string, link: string): any {
     const headTag: string = "h4";
     const contentTag: string = "p";
-    const readMore: string = "<a href=" + link + ">Lees meer.</a>";
+    const readMore: string = "<a href=" + link + ">Read more.</a>";
     let marker;
     let infoWindow;
     let text = content ? "<a href='" + link + "'><" + headTag + ">" + title + "</" + headTag + "> </a>" + "<" + contentTag + ">" + content + "\n" + readMore + "</" + contentTag + ">" : "<a href='" + link + "'><" + headTag + ">" + title + "</" + headTag + "> </a>";
