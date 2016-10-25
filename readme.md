@@ -63,16 +63,27 @@ var map = new GMap("_YOUR_API_KEY_", mapObject, {
 # Refrence
 
 `constructor(apiKey: string, target: any, mapOptions: any, callback: any)` Build google map, Returns map object
+
 `.map` google map object.
+
 `.markers` array of all the markers.
+
 `.zoom` var, set zoom level.
+
 `.center` var, set center of map {lat: float, lng: float}
+
 `.mapType` var, setMapTypeId
+
 `.getCor(adress: string)` Returns coordinates of a place - Return {lat: float, lng: float}
+
 `.marker(slug: string): any` returns marker of categorie, use slug
+
 `.makeMarker({lat, lng}: { lat: number, lng: number }, title: string, content: string, categorie: string, link: string): any` Create a marker on map, Returns marker object
+
 `.toggleCat(categorie: string): void` Hide or display a categorie
+
 `.getAllMarkers(): any[]` get all the markers in a single flat array.
+
 `addLegendaItem(name: string, slug: string, iconUrl: string): void` Make new legenda item
 
 
