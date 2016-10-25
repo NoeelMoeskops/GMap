@@ -6,7 +6,9 @@ class GMap {
         this.callback = callback;
         this.markers = [];
         this.openMarkers = [];
-        return this.initMap();
+        this.addTag("https://maps.googleapis.com/maps/api/js?key=" + this.apiKey, () => {
+            this.initMap();
+        });
     }
     set zoom(level) {
         this.map.setZoom(level);
@@ -29,14 +31,13 @@ class GMap {
                 {
                     featureType: 'transit',
                     elementType: 'labels.icon',
-                    stylers: [{ visibility: 'off' }]
+                    stylers: [{ visibility: 'on' }]
                 }
             ]
         });
         this.legenda();
         this.clustify();
         this.callback();
-        return this.map;
     }
     addTag(url, callback) {
         let tag = document.createElement("script");
@@ -77,7 +78,7 @@ class GMap {
     makeMarker({ lat, lng }, title, content, categorie, link) {
         const headTag = "h4";
         const contentTag = "p";
-        const readMore = "<a href=" + link + ">Lees meer.</a>";
+        const readMore = "<a href=" + link + ">Read more.</a>";
         let marker;
         let infoWindow;
         let text = content ? "<a href='" + link + "'><" + headTag + ">" + title + "</" + headTag + "> </a>" + "<" + contentTag + ">" + content + "\n" + readMore + "</" + contentTag + ">" : "<a href='" + link + "'><" + headTag + ">" + title + "</" + headTag + "> </a>";
@@ -135,7 +136,7 @@ class GMap {
     }
     clustify() {
         let style = {
-            url: "https://github.com/Noedel-Man/GMap/img/cluster.png",
+            url: "https://raw.githubusercontent.com/Noedel-Man/GMap/master/img/cluster.png",
             height: 26,
             width: 26,
             anchor: [0, 0],

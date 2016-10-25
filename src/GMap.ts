@@ -23,9 +23,9 @@ class GMap {
 
   /**Build google map, Returns map object*/
   constructor(private apiKey: string, private target: any, private mapOptions: any, private callback: any) {
-    // this.addTag("https://maps.googleapis.com/maps/api/js?key=" + this.apiKey, () => {
-      return this.initMap();
-    // });
+    this.addTag("https://maps.googleapis.com/maps/api/js?key=" + this.apiKey, () => {
+        this.initMap();
+    });
   }
 
   /**Build map*/
@@ -41,14 +41,14 @@ class GMap {
         {
           featureType: 'transit',
           elementType: 'labels.icon',
-          stylers: [{ visibility: 'off' }]
+          stylers: [{ visibility: 'on' }]
         }
       ]
     });
     this.legenda();
     this.clustify();
     this.callback();
-    return this.map;
+    // return this.map;
   }
   /**Add tag BEFORE first scripttag on html page, Returns DOM object*/
   private addTag(url: any, callback: any): any {
