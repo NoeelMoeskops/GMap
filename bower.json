@@ -16,7 +16,7 @@
   "private": false,
   "ignore": [
     "node_modules",
-    "bower_components",
+    "bower_components"
   ],
   "dependencies": {
     "js-marker-clusterer": "*"
