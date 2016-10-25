@@ -174,7 +174,7 @@ class GMap {
   // add clusters, only called onces from initMap.
   private clustify(): void {
     let style = {
-      url: "https://github.com/Noedel-Man/GMap/img/cluster.png",
+      url: "https://raw.githubusercontent.com/Noedel-Man/GMap/master/img/cluster.png",
       height: 26,
       width: 26,
       anchor: [0, 0],
